@@ -21,5 +21,5 @@ function playRound(playerPick, computerPick){
     playerScore++
     else
     computerScore++
-    console.log(playerScore + "|||" +  computerScore)
+    console.log(`Player Score: ${playerScore} | Computer Score: ${computerScore}`)
 }
