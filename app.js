@@ -1,6 +1,12 @@
 
 let choices = ["rock", "paper", "scissors"]
 let computerChoice = ""
+let playerChoice = ""
+let playerScore = 0;
+let computerScore = 0;
+let btn = document.getElementById("start")
+
+
 
 function getComputerChoice(){
     computerChoice = choices[Math.floor(Math.random() * 3)]
@@ -36,3 +42,8 @@ function playGame(){
         console.log("BOOOOOO a computer beat you!?!? Lame!!!!:(")
     }
 }
+
+btn.addEventListener("click", () => {
+    playerScore = 0
+    computerScore = 0
+    playGame()})
