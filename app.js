@@ -7,4 +7,6 @@ function getComputerChoice(){
     console.log(computerChoice)
 }
 
-getComputerChoice()
+function getPlayerChoice(){
+    playerChoice = prompt("Choose: rock, paper, or scissors?")
+}
