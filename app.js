@@ -23,3 +23,16 @@ function playRound(playerPick, computerPick){
     computerScore++
     console.log(`Player Score: ${playerScore} | Computer Score: ${computerScore}`)
 }
+
+function playGame(){
+    for(let i = 0; i<5; i++)
+    {
+        playRound(playerChoice, computerChoice)
+    }
+    if (playerScore > computerScore){
+        console.log("Congrats!!!! Player Winsssss!!!!!")
+    }
+    else{
+        console.log("BOOOOOO a computer beat you!?!? Lame!!!!:(")
+    }
+}
