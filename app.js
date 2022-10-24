@@ -10,3 +10,16 @@ function getComputerChoice(){
 function getPlayerChoice(){
     playerChoice = prompt("Choose: rock, paper, or scissors?")
 }
+
+function playRound(playerPick, computerPick){
+    console.log("playRound")
+    getComputerChoice()
+    getPlayerChoice()
+    if(playerPick === "rock" && computerPick === "scissors"
+    || playerPick === "paper" && computerPick === "rock"
+    || playerPick === "scissors" && computerPick === "paper")
+    playerScore++
+    else
+    computerScore++
+    console.log(playerScore + "|||" +  computerScore)
+}
