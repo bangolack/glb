@@ -1,9 +1,26 @@
-
 let choices = ["rock", "paper", "scissors"]
 let playerScore = 0
 let computerScore = 0
 let btn = document.getElementById("start")
 let wantsToPlayAgain = true
+let rock = document.getElementById("rock")
+let paper = document.getElementById("paper")
+let scissors = document.getElementById("scissors")
+
+rock.addEventListener("click", function(){
+    playGame("rock")
+})
+
+paper.addEventListener("click", function(){
+    playGame("paper")
+})
+
+scissors.addEventListener("click", function(){
+    playGame("scissors")
+})
+
+
+
 btn.addEventListener("click", function () {
     wantsToPlayAgain = true
     startGame()})
@@ -50,26 +67,23 @@ function playRound(playerSelection, computerSelection){
    
 }
 
-function playGame(){
-    for (let i = 0; i < 5; i++){
-    let playerSelection = prompt("pick rock, paper, or scissors")
-    playerSelection = playerSelection.toLowerCase()
+function playGame(playerSelection){
+    //for (let i = 0; i < 5; i++){
+   // let playerSelection = prompt("pick rock, paper, or scissors")
     let computerSelection = getComputerChoice()
     console.log(playRound(playerSelection, computerSelection))
     console.log(`Player: ${playerScore} Computer: ${computerScore}`)
 
-    }
+   // }
 }
 
 
 
-function startGame(){
-while (wantsToPlayAgain){
+
+
     playGame()
 
-    wantsToPlayAgain = confirm("Would you like to play again?")
-    playerScore = 0
-    computerScore = 0
-}}
+
   
-startGame()
+
+
