@@ -4,7 +4,9 @@ let playerScore = 0
 let computerScore = 0
 let btn = document.getElementById("start")
 let wantsToPlayAgain = true
-btn.addEventListener("click", () => wantsToPlayAgain = true)
+btn.addEventListener("click", function () {
+    wantsToPlayAgain = true
+    startGame()})
 console.log(btn)
 
 function getComputerChoice(){
