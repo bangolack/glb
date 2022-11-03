@@ -1,2 +1,2 @@
 # glb
-Grass Lion Bunny Game
+Rock Paper Scissors Game
